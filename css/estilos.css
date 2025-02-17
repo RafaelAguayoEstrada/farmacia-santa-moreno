@@ -1,0 +1,185 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff; /* Fondo negro */
+    color: #61e24a; /* Texto verde */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #61e24a; /* Fondo verde */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff; /* Texto negro */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff; /* Texto blanco al hacer hover */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+    color: #ffffff; /* Texto negro */
+}
+
+h2 {
+    color: #61e24a; /* Verde brillante para títulos */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff; /* Texto negro */
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #61e24a; /* Verde brillante */
+    box-shadow: 0 0 5px rgba(97, 226, 74, 0.5); /* Sombra verde */
+    outline: none;
+}
+
+form button {
+    background-color: #61e24a; /* Verde brillante */
+    color: #ffffff; /* Texto negro */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #30c149; /* Verde más oscuro al hacer hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #61e24a; /* Verde brillante */
+    color: #ffffff; /* Texto negro */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0; /* Gris claro para filas pares */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* Gris más oscuro al hacer hover */
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.actions button.delete {
+    background-color: #ff4d4d; /* Rojo para eliminar */
+    color: #ffffff; /* Texto blanco */
+}
+
+.actions button.delete:hover {
+    background-color: #cc0000; /* Rojo más oscuro al hacer hover */
+}
+
+.actions button.edit {
+    background-color: #61e24a; /* Verde brillante */
+    color: #1a1a1a; /* Texto negro */
+}
+
+.actions button.edit:hover {
+    background-color: #30c149; /* Verde más oscuro al hacer hover */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    form input, form select, form button {
+        font-size: 14px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmacia - Clientes</title>
+  <link rel="stylesheet" href="../farmacia/css/estilos.css">
+</head>
+<body>
+<header>
+  <h1>Clientes</h1>
+</header>
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="clientes.html">Clientes</a>
+  <a href="empleados.html">Empleados</a>
+  <a href="productos.html">Productos</a>
+  <a href="ventas.html">Ventas</a>
+</nav>
+<div class="container">
+  <h2>Gestión de Clientes</h2>
+  <form id="formCliente">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required>
+
+    <label for="telefono">Número de Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" required>
+
+    <label for="correo">Correo Empresarial:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="membresia">Nivel de Membresía:</label>
+    <select id="membresia" name="membresia" required>
+      <option value="basica">Básica</option>
+      <option value="premium">Premium</option>
+      <option value="vip">VIP</option>
+    </select>
+
+    <button type="submit">Agregar Cliente</button>
+  </form>
+
+  <h3>Lista de Clientes</h3>
+  <table id="tablaClientes">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Teléfono</th>
+      <th>Correo</th>
+      <th>Membresía</th>
+      <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Los clientes se cargarán aquí dinámicamente -->
+    </tbody>
+  </table>
+</div>
+<script src="../script/main.js"></script>
+</body>
+</html>

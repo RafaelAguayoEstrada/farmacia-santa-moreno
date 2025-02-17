@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmacia - Ventas</title>
+  <link rel="stylesheet" href="../farmacia/css/estilos.css">
+</head>
+<body>
+<header>
+  <h1>Ventas</h1>
+</header>
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="clientes.html">Clientes</a>
+  <a href="empleados.html">Empleados</a>
+  <a href="productos.html">Productos</a>
+  <a href="ventas.html">Ventas</a>
+</nav>
+<div class="container">
+  <h2>Gestión de Ventas</h2>
+  <form id="formVenta">
+    <label for="id_cliente">Cliente:</label>
+    <select id="id_cliente" name="id_cliente" required>
+      <!-- Los clientes se cargarán aquí dinámicamente -->
+    </select>
+
+    <label for="id_producto">Producto:</label>
+    <select id="id_producto" name="id_producto" required>
+      <!-- Los productos se cargarán aquí dinámicamente -->
+    </select>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" required>
+
+    <button type="submit">Procesar Venta</button>
+  </form>
+
+  <h3>Lista de Ventas</h3>
+  <table id="tablaVentas">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Cliente</th>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Fecha</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Las ventas se cargarán aquí dinámicamente -->
+    </tbody>
+  </table>
+</div>
+<script src="../script/main.js"></script>
+</body>
+</html>
